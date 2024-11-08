@@ -1,50 +1,70 @@
-# React + TypeScript + Vite
+# To-Do Web App (React + TypeScript + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple To-Do Web application built using **React**, **TypeScript**, and **Vite**. The app allows users to create, mark as completed, and delete tasks.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add new tasks to the list
+- View and manage your list of tasks
+- Mark tasks as completed or pending
+- Delete tasks
+- Responsive design built with **Tailwind CSS**
+- **TypeScript** for type checking and better developer experience
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: A superset of JavaScript that adds static typing.
+- **Vite**: A modern build tool that provides fast build times and hot module replacement.
+- **Tailwind CSS**: A utility-first CSS framework for styling the app.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Follow these steps to get the app running locally.
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** (Recommended version: 14.x or higher)
+- **npm** or **yarn**
+
+### Installation
+
+1. **Clone the repository**:
+
+```bash
+git clone https://github.com/NTTGaming112/Todos
+```
+2. **Navigate to the project folder**:
+
+```bash
+cd Todos
+```
+3. **Install dependencies**:
+
+Using npm:
+```bash
+npm install
+```
+Or using yarn:
+
+```bash
+yarn install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+4. **Run the app**:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+After the dependencies are installed, start the development server:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+Using npm:
+
+```bash
+npm run dev
 ```
+Or with yarn:
+
+```bash
+yarn dev
+```
+Open your browser and go to http://localhost:5173 to view the app.
